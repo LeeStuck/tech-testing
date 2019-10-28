@@ -1,0 +1,47 @@
+**********************
+***     Problem/Game:
+**********************
+In the language of your choice, please write a documented piece of code which can do the following:
+- Read in from a text file, of the following format:
+
+"""
+Target: 720
+2
+4,3
+3,2,6
+2,9,5,2
+10,5,2,15,5
+"""
+
+- Find the unique solution for the given target.
+   A target is reached by starting at the top of the pyramid and multiplying down (into one of the current node's two children) such that an element from each row is used.
+
+- Upon reaching the solution, write out the directions your path traces in the form of "left" or "right" for each step down. In this case, "left" is the left-hand child of the parent node. These directions should be written out to a text file in the same folder as the given pyramid. If no solution exists, communicate this.
+
+Example:
+
+If given the following:
+
+"""
+Target: 12
+1
+2,3
+4,6,1
+"""
+
+A solver for this puzzle should output [L,R], showing it hits 1, then 2, then 6.
+
+An invalid solution would be [R,L]. Even though this product is correct, the 4 is inaccessible from the 3 because it is not a child of that node.
+
+
+**********************
+***     Rules:
+**********************
+
+Take as much time as you need to solve this, but try to keep your efforts to no more than 2-3 hours.
+This puzzle is solvable without outside packages being pulled in, so please strive for a similar solution.
+Your code should be able to handle any number of rows, all of which contain integers and are complete.
+Google is your friend! That being said, you will be expected to defend and explain each segment of your code at a later date.
+
+______ Property of Pareto Intelligence ~ 2019 ________
+______  Please do not redistribute this file  ________
